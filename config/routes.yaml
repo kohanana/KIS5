@@ -1,0 +1,137 @@
+# Пользователи
+GetUsers:
+  path:       /users
+  controller: App\Controller\UsersController::GetUsers
+  methods:    GET
+
+GetUser:
+  path:       /user/{id}
+  controller: App\Controller\UsersController::GetUsero
+  methods:    GET
+  defaults:
+    id: 1
+
+PostUser:
+  path:       /users
+  controller: App\Controller\UsersController::PostUser
+  methods:    POST
+
+PutUser:
+  path:       /user/{id}
+  controller: App\Controller\UsersController::PutUser
+  methods:    PUT
+  defaults:
+    id: 1
+
+DeleteUser:
+  path:       /user/{id}
+  controller: App\Controller\UsersController::DeleteUser
+  methods:    DELETE
+# Планы
+GetPlans:
+  path:       /plans
+  controller: App\Controller\PlansController::GetPlans
+  methods:    GET
+
+GetPlan:
+  path:       /plan/{id}
+  controller: App\Controller\PlansController::GetPlan
+  methods:    GET
+  defaults:
+    id: 1
+
+PostPLan:
+  path:       /plans
+  controller: App\Controller\PlansController::PostPlan
+  methods:    POST
+
+PutPlan:
+  path:       /plan/{id}
+  controller: App\Controller\PlansController::PutPlan
+  methods:    PUT
+  defaults:
+    id: 1
+
+DeletePlan:
+  path:       /plan/{id}
+  controller: App\Controller\PlansController::DeletePlan
+  methods:    DELETE
+  defaults:
+    id: 1
+# Категории
+GetCategories:
+  path:       /categories
+  controller: App\Controller\CategoriesController::GetCategories
+  methods:    GET
+
+GetCategory:
+  path:       /category/{id}
+  controller: App\Controller\CategoriesController::GetCategory
+  methods:    GET
+  defaults:
+    id: 1
+
+PostCategory:
+  path:       /categories
+  controller: App\Controller\CategoriesController::PostCategory
+  methods:    POST
+
+PutCategory:
+  path:       /category/{id}
+  controller: App\Controller\CategoriesController::PutCategory
+  methods:    PUT
+  defaults:
+    id: 1
+
+DeleteCategory:
+  path:       /category/{id}
+  controller: App\Controller\CategoriesController::DeleteCategory
+  methods:    DELETE
+  defaults:
+    id: 1
+
+# Объявления
+GetAds:
+  path:       /ads
+  controller: App\Controller\AdsController::GetAds
+  methods:    GET
+
+GetAd:
+  path:       /ad/{id}
+  controller: App\Controller\AdsController::GetAd
+  methods:    GET
+  defaults:
+    id: 1
+
+GetAdsOfUser:
+  path:       /adsOfUser/{userId}
+  controller: App\Controller\AdsController::GetAdsOfUser
+  methods:    GET
+  defaults:
+    userId: 1
+
+GetAdsOfCategory:
+  path:       /adsOfCategory/{categoryId}
+  controller: App\Controller\AdsController::GetAdsOfCategory
+  methods:    GET
+  defaults:
+    categoryId: 1
+
+PostAd:
+  path:       /ads
+  controller: App\Controller\AdsController::PostAd
+  methods:    POST
+
+PutAd:
+  path:       /ad/{id}
+  controller: App\Controller\AdsController::PutAd
+  methods:    PUT
+  defaults:
+    id: 1
+
+DeleteAd:
+  path:       /ad/{id}
+  controller: App\Controller\AdsController::DeleteAd
+  methods:    DELETE
+  defaults:
+    id: 1
